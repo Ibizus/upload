@@ -1,0 +1,54 @@
+{
+	"info": {
+		"_postman_id": "640df404-e72e-4b52-9c19-759230f3b732",
+		"name": "upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30773638"
+	},
+	"item": [
+		{
+			"name": "upload form-data file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "upload.txt"
+						}
+					]
+				},
+				"url": "http://localhost:8080/upload"
+			},
+			"response": []
+		},
+		{
+			"name": "upload-with-json multipart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8080/upload-with-json"
+			},
+			"response": []
+		},
+		{
+			"name": "files",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "files/{filename:.+}",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
